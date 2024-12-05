@@ -78,8 +78,6 @@ const TaskTable = () => {
 		},
 	});
 
-	console.log(columnFilters);
-
 	return (
 		<Box>
 			<Filters columnFilters={columnFilters} setColumnFilters={setColumnFilters} />
