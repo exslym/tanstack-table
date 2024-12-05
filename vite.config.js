@@ -1,12 +1,18 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  server: {
-    watch: {
-      usePolling: true,
-    },
-  },
+	root: './src',
+	publicDir: '../public',
+	base: './',
+
+	build: {
+		emptyOutDir: true,
+		outDir: '../dist',
+	},
+	css: {
+		devSourcemap: true,
+	},
+
+	plugins: [react()],
 });
