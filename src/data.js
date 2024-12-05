@@ -12,7 +12,7 @@ const DATA = [
 	{
 		task: 'Add a New Feature',
 		status: STATUS_ON_DECK,
-		due: new Date('2023/10/15'),
+		due: new Date('2024/12/24'),
 		notes: 'This is a note',
 	},
 	{
@@ -30,7 +30,7 @@ const DATA = [
 	{
 		task: 'Cleanup Database',
 		status: null,
-		due: new Date('2023/02/15'),
+		due: new Date('2024/12/27'),
 		notes: 'Remove old data',
 	},
 	{
@@ -42,7 +42,7 @@ const DATA = [
 	{
 		task: 'Add Documentation to API',
 		status: null,
-		due: new Date('2023/09/12'),
+		due: new Date('2024/12/25'),
 		notes: 'Add JS Docs to all endpoints',
 	},
 	{
@@ -60,13 +60,13 @@ const DATA = [
 	{
 		task: 'Implement User Authentication',
 		status: STATUS_ON_DECK,
-		due: new Date('2023/11/08'),
+		due: new Date('2024/12/26'),
 		notes: 'OAuth2 and JWT auth.',
 	},
 	{
 		task: 'Design User Interface Mockups',
 		status: null,
-		due: new Date('2023/09/30'),
+		due: new Date('2025/01/06'),
 		notes: 'Create UI mockups.',
 	},
 	{
@@ -78,13 +78,13 @@ const DATA = [
 	{
 		task: 'Perform Security Audit',
 		status: null,
-		due: new Date('2023/10/22'),
+		due: new Date('2025/01/08'),
 		notes: 'Security audit.',
 	},
 	{
 		task: 'Create User Onboarding Tutorial',
 		status: STATUS_ON_DECK,
-		due: new Date('2023/11/15'),
+		due: new Date('2024/12/29'),
 		notes: 'User onboarding guide.',
 	},
 	{
@@ -96,13 +96,13 @@ const DATA = [
 	{
 		task: 'Conduct Code Review',
 		status: null,
-		due: new Date('2023/10/05'),
+		due: new Date('2025/01/08'),
 		notes: 'Code review meeting.',
 	},
 	{
 		task: 'Implement Continuous Integration',
 		status: STATUS_ON_DECK,
-		due: new Date('2023/11/01'),
+		due: new Date('2024/12/23'),
 		notes: 'Set up CI/CD pipelines.',
 	},
 	{
@@ -114,7 +114,7 @@ const DATA = [
 	{
 		task: 'Create User Feedback Survey',
 		status: null,
-		due: new Date('2023/09/25'),
+		due: new Date('2025/01/10'),
 		notes: 'User feedback survey.',
 	},
 	{
@@ -126,7 +126,7 @@ const DATA = [
 	{
 		task: 'Bug Fixing and QA Testing',
 		status: null,
-		due: new Date('2023/10/10'),
+		due: new Date('2025/01/13'),
 		notes: 'Fix bugs and QA.',
 	},
 	{
@@ -138,7 +138,7 @@ const DATA = [
 	{
 		task: 'Refine User Permission System',
 		status: null,
-		due: new Date('2023/09/18'),
+		due: new Date('2025/01/14'),
 		notes: 'Enhance permissions.',
 	},
 ];
