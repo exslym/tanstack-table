@@ -1,9 +1,15 @@
 import { Box } from '@chakra-ui/react';
-import { flexRender, getCoreRowModel, useReactTable } from '@tanstack/react-table';
+import {
+	flexRender,
+	getCoreRowModel,
+	getFilteredRowModel,
+	useReactTable,
+} from '@tanstack/react-table';
 import { useState } from 'react';
 import DATA from '../data';
 import DateCell from './DateCell';
 import EditableCell from './EditableCell';
+import Filters from './Filters';
 import StatusCell from './StatusCell';
 
 const columns = [
@@ -26,17 +32,20 @@ const columns = [
 	{
 		accessorKey: 'notes',
 		header: 'Notes',
-		cell: props => <p>{props.getValue()}</p>,
+		cell: EditableCell,
 	},
 ];
 
 const TaskTable = () => {
 	const [data, setData] = useState(DATA);
+	const [columnFilters, setColumnFilters] = useState([]);
 
 	const table = useReactTable({
 		data,
 		columns,
+		state: { columnFilters },
 		getCoreRowModel: getCoreRowModel(),
+		getFilteredRowModel: getFilteredRowModel(),
 		columnResizeMode: 'onChange',
 		meta: {
 			updateData: (rowIndex, columnId, value) =>
@@ -53,8 +62,11 @@ const TaskTable = () => {
 		},
 	});
 
+	console.log(columnFilters);
+
 	return (
 		<Box>
+			<Filters columnFilters={columnFilters} setColumnFilters={setColumnFilters} />
 			<Box className='table' w={table.getTotalSize()}>
 				{/* HEADERS */}
 				{table.getHeaderGroups().map(headerGroup => (
