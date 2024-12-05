@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react';
 import { flexRender, getCoreRowModel, useReactTable } from '@tanstack/react-table';
 import { useState } from 'react';
 import DATA from '../data';
+import DateCell from './DateCell';
 import EditableCell from './EditableCell';
 import StatusCell from './StatusCell';
 
@@ -20,7 +21,7 @@ const columns = [
 	{
 		accessorKey: 'due',
 		header: 'Due',
-		cell: props => <p>{props.getValue()?.toLocaleTimeString()}</p>,
+		cell: DateCell,
 	},
 	{
 		accessorKey: 'notes',
