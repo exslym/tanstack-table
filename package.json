@@ -15,7 +15,6 @@
 		"@emotion/react": "11.11.1",
 		"@emotion/styled": "11.11.0",
 		"@tanstack/react-table": "8.9.3",
-		"framer-motion": "10.16.1",
 		"react": "18.2.0",
 		"react-datepicker": "^4.16.0",
 		"react-dom": "18.2.0"
