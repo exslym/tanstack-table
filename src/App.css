@@ -1,0 +1,151 @@
+html {
+	height: 100vh !important;
+}
+html,
+body {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #171923;
+}
+.header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 1.5rem;
+}
+.header > * {
+	margin: 0;
+	padding: 0;
+}
+.theme-switcher {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 1.75rem;
+	height: 1.75rem;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 1px solid rgb(25, 25, 25);
+}
+.theme-switcher p {
+	width: 100%;
+	height: 100%;
+	font-size: 1.4rem;
+	font-weight: bold;
+	line-height: 1.2;
+}
+.react-datepicker .react-datepicker button {
+	line-height: 1;
+}
+.react-datepicker .react-datepicker__month {
+	margin: 0;
+	border-bottom-left-radius: 0.3rem;
+	border-bottom-right-radius: 0.3rem;
+}
+.react-datepicker .react-datepicker__day--today {
+	color: rgb(0, 0, 0);
+}
+
+/* DARK MODE */
+
+html[style^='color-scheme: dark'] {
+	background-color: rgb(25, 25, 25);
+	color: rgb(180, 180, 180);
+}
+.dark body {
+	background-color: rgb(25, 25, 25);
+	color: rgb(180, 180, 180);
+}
+
+.dark .theme-switcher {
+	border: 1px solid rgb(180, 180, 180);
+	background: rgb(180, 180, 180);
+	color: rgb(25, 25, 25);
+}
+
+.dark .input-search,
+.dark .filter-button {
+	background: rgb(25, 25, 25);
+	border: 2px solid rgb(180, 180, 180);
+	color: rgb(180, 180, 180);
+}
+.dark .input-search:hover,
+.dark .filter-button:hover {
+	background: rgb(60, 60, 60);
+}
+.dark .popover-body {
+	background: rgb(25, 25, 25);
+	color: rgb(180, 180, 180);
+	border-radius: 5px;
+}
+
+.dark .table {
+	border: 1px solid rgb(180, 180, 180);
+}
+.dark .th,
+.dark .td {
+	box-shadow: inset 0 0 0 1px rgb(180, 180, 180);
+}
+
+.dark .cell-task input:hover {
+	background: rgb(60, 60, 60);
+}
+
+.dark .status-item:hover {
+	background: rgb(60, 60, 60);
+}
+.dark .status-menu,
+.dark .status-menu-item {
+	background: rgb(25, 25, 25);
+}
+.dark .status-menu-item:hover {
+	background: rgb(60, 60, 60);
+}
+
+.dark .react-datepicker__header {
+	background-color: rgb(60, 60, 60);
+}
+.dark .react-datepicker__header > *,
+.dark .react-datepicker__day-names > * {
+	color: rgb(180, 180, 180);
+}
+.dark .react-datepicker button {
+	color: rgb(180, 180, 180);
+	line-height: 1;
+}
+.dark .react-datepicker__month {
+	background-color: rgb(25, 25, 25);
+}
+.dark .react-datepicker__day {
+	color: rgb(180, 180, 180);
+}
+.dark .react-datepicker__day:hover {
+	background: rgb(60, 60, 60);
+}
+.dark .react-datepicker__day--today {
+	color: rgb(220, 220, 220);
+}
+.dark .react-datepicker__day--selected,
+.dark .react-datepicker__day--keyboard-selected,
+.dark .react-datepicker__month-text--today,
+.dark .react-datepicker__quarter-text--today,
+.dark .react-datepicker__year-text--today {
+	color: rgb(220, 220, 220);
+	background: rgb(60, 60, 60);
+}
+.dark .react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle::after {
+	border-bottom-color: rgb(60, 60, 60);
+}
+.dark .react-datepicker-popper[data-placement^='top'] .react-datepicker__triangle::after {
+	border-top-color: rgb(25, 25, 25);
+}
+
+.dark .pagination-buttons button {
+	color: rgb(180, 180, 180);
+}
+.dark .pagination-buttons button:hover {
+	background: rgb(60, 60, 60);
+}

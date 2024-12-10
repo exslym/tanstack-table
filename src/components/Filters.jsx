@@ -16,9 +16,9 @@ const Filters = ({ columnFilters, setColumnFilters }) => {
 
 	return (
 		<HStack mb={6} spacing={3}>
-			<InputGroup size='sm' maxW='12rem'>
+			<InputGroup className='input-group' size='sm' maxW='12rem'>
 				<InputLeftElement pointerEvents='none'>
-					<Icon as={SearchIcon} />
+					<Icon as={SearchIcon} w={5} h={5} pt={0.5} />
 				</InputLeftElement>
 				<Input
 					type='text'
@@ -27,6 +27,7 @@ const Filters = ({ columnFilters, setColumnFilters }) => {
 					borderRadius={5}
 					value={taskName}
 					onChange={e => onFilterChange('task', e.target.value)}
+					className='input-search'
 				/>
 			</InputGroup>
 			<FilterPopover columnFilters={columnFilters} setColumnFilters={setColumnFilters} />

@@ -16,19 +16,26 @@ const StatusCell = ({ getValue, row, column, table }) => {
 				w='100%'
 				textAlign='left'
 				p={1.5}
-				bg={color || 'transparent'}
-				color='gray.900'
+				borderLeft={'5px solid'}
+				borderLeftColor={color || 'transparent'}
 			>
 				{name}
 			</MenuButton>
-			<MenuList>
-				<MenuItem onClick={() => updateData(row.index, column.id, null)}>
+			<MenuList className='status-menu'>
+				<MenuItem
+					onClick={() => updateData(row.index, column.id, null)}
+					className='status-menu-item'
+				>
 					<ColorIcon color='red.400' mr={3} />
 					None
 				</MenuItem>
 
 				{STATUSES.map(status => (
-					<MenuItem onClick={() => updateData(row.index, column.id, status)} key={status.id}>
+					<MenuItem
+						onClick={() => updateData(row.index, column.id, status)}
+						key={status.id}
+						className='status-menu-item'
+					>
 						<ColorIcon color={status.color} mr={3} />
 						{status.name}
 					</MenuItem>

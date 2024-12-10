@@ -117,7 +117,7 @@ const TaskTable = () => {
 				{table.getRowModel().rows.map(row => (
 					<Box className='tr' key={row.id}>
 						{row.getVisibleCells().map(cell => (
-							<Box className='td' w={cell.column.getSize()} key={cell.id}>
+							<Box className='td cell-task' w={cell.column.getSize()} key={cell.id}>
 								{flexRender(cell.column.columnDef.cell, cell.getContext())}
 							</Box>
 						))}
@@ -128,7 +128,7 @@ const TaskTable = () => {
 			<Text mb={2}>
 				Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
 			</Text>
-			<ButtonGroup size='sm' isAttached variant='outline'>
+			<ButtonGroup size='sm' isAttached variant='outline' className='pagination-buttons'>
 				<Button onClick={() => table.previousPage()} isDisabled={!table.getCanPreviousPage()}>
 					{'<'}
 				</Button>

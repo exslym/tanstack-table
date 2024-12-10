@@ -1,10 +1,14 @@
 import { Box, Heading } from '@chakra-ui/react';
 import TaskTable from './components/TaskTable';
+import { ThemeSwitcher } from './components/ThemeSwitcher';
 
 function App() {
 	return (
-		<Box maxW={1000} mx='auto' px={6} pt={10} fontSize='sm'>
-			<Heading mb={10}>TanStack Table</Heading>
+		<Box maxW={1000} mx='auto' p={6} fontSize='1rem'>
+			<div className='header'>
+				<Heading>TanStack Table</Heading>
+				<ThemeSwitcher />
+			</div>
 			<TaskTable />
 		</Box>
 	);

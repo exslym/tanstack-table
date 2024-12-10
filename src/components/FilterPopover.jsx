@@ -17,13 +17,14 @@ import { ColorIcon } from './StatusCell';
 
 const StatusItem = ({ status, setColumnFilters, isActive }) => (
 	<Flex
+		className='status-item'
 		align='center'
 		cursor='pointer'
 		borderRadius={5}
-		fontWeight='bold'
+		fontWeight='semibold'
 		p={1.5}
-		bg={isActive ? 'gray.800' : 'transparent'}
-		_hover={{ bg: 'gray.800' }}
+		bg={isActive ? 'gray.200' : 'transparent'}
+		_hover={{ bg: 'gray.200' }}
 		onClick={() =>
 			setColumnFilters(prev => {
 				const statuses = prev.find(filter => filter.id === 'status')?.value;
@@ -58,7 +59,17 @@ const FilterPopover = ({ columnFilters, setColumnFilters }) => {
 	return (
 		<Popover isLazy>
 			<PopoverTrigger>
-				<Button size='sm' fontSize={18} leftIcon={<Icon as={FilterIcon} />}>
+				<Button
+					size='sm'
+					outline={2}
+					border={2}
+					borderStyle={'solid'}
+					borderColor={'transparent'}
+					fontSize={18}
+					fontWeight='semibold'
+					leftIcon={<Icon as={FilterIcon} />}
+					className='filter-button'
+				>
 					Filter
 				</Button>
 			</PopoverTrigger>
@@ -66,7 +77,7 @@ const FilterPopover = ({ columnFilters, setColumnFilters }) => {
 			<PopoverContent>
 				<PopoverArrow />
 				<PopoverCloseButton />
-				<PopoverBody>
+				<PopoverBody className='popover-body'>
 					<Text fontSize='md' fontWeight='bold' mb={4}>
 						Filter By:
 					</Text>

@@ -20,7 +20,7 @@ const EditableCell = ({ getValue, row, column, table }) => {
 			onBlur={onBlur}
 			variant='filled'
 			size='sm'
-			w='85%'
+			w='calc(100% - 0.5rem)'
 			overflow='hidden'
 			textOverflow='ellipsis'
 			whiteSpace='nowrap'

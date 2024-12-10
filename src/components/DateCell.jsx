@@ -12,7 +12,8 @@ const DateCustomInput = forwardRef(({ value, onClick, clearDate }, ref) => (
 				<Box
 					pos='absolute'
 					right={3}
-					fontSize='md'
+					fontSize='lg'
+					lineHeight={1}
 					color='red.300'
 					onClick={e => {
 						e.stopPropagation();
