@@ -1,3 +1,6 @@
+:root {
+	color-scheme: only light;
+}
 html {
 	height: 100vh !important;
 }
@@ -148,17 +151,4 @@ html[style^='color-scheme: dark'] {
 }
 .dark .pagination-buttons button:hover {
 	background: rgb(60, 60, 60);
-}
-
-@media (prefers-color-scheme: light) {
-	body {
-		background: #fff;
-		color: #333;
-	}
-}
-@media (prefers-color-scheme: dark) {
-	body {
-		background: green;
-		color: #fff;
-	}
 }
