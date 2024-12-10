@@ -3,7 +3,7 @@ import styles from './styles';
 
 const config = {
 	initialColorMode: 'light',
-	useSystemColorMode: true,
+	useSystemColorMode: false,
 };
 
 const theme = extendTheme({
