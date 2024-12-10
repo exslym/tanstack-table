@@ -40,7 +40,7 @@ body {
 	font-weight: bold;
 	line-height: 1.2;
 }
-.react-datepicker .react-datepicker button {
+.react-datepicker button {
 	line-height: 1;
 }
 .react-datepicker .react-datepicker__month {
@@ -55,29 +55,39 @@ body {
 /* DARK MODE */
 
 html[style^='color-scheme: dark'] {
-	background-color: rgb(25, 25, 25);
-	color: rgb(180, 180, 180);
+	background-color: rgb(26, 32, 44);
+	color: rgb(237, 237, 238);
 }
 .dark body {
-	background-color: rgb(25, 25, 25);
-	color: rgb(180, 180, 180);
+	background-color: rgb(26, 32, 44);
+	color: rgb(237, 237, 238);
 }
 
 .dark .theme-switcher {
-	border: 1px solid rgb(180, 180, 180);
-	background: rgb(180, 180, 180);
-	color: rgb(25, 25, 25);
+	border: 1px solid rgb(237, 237, 238);
+	background: rgb(237, 237, 238);
+	color: rgb(26, 32, 44);
 }
 
 .dark .input-search,
 .dark .filter-button {
-	background: rgb(25, 25, 25);
-	border: 2px solid rgb(180, 180, 180);
-	color: rgb(180, 180, 180);
+	color: rgb(237, 237, 238);
 }
-.dark .input-search:hover,
+.dark .input-search {
+	background: rgb(35, 41, 52);
+	border: 2px solid rgb(35, 41, 52);
+}
+.dark .filter-button {
+	background: rgb(44, 49, 61);
+	border: 2px solid rgb(44, 49, 61);
+}
+.dark .input-search:hover {
+	background: rgb(39, 45, 56);
+	border: 2px solid rgb(39, 45, 56);
+}
 .dark .filter-button:hover {
-	background: rgb(60, 60, 60);
+	background: rgb(63, 68, 78);
+	border: 2px solid rgb(63, 68, 78);
 }
 .dark .popover-body {
 	background: rgb(25, 25, 25);
@@ -86,47 +96,55 @@ html[style^='color-scheme: dark'] {
 }
 
 .dark .table {
-	border: 1px solid rgb(180, 180, 180);
+	border: 1px solid rgb(66, 66, 66);
 }
 .dark .th,
 .dark .td {
-	box-shadow: inset 0 0 0 1px rgb(180, 180, 180);
+	box-shadow: inset 0 0 0 1px rgb(66, 66, 66);
 }
 
 .dark .cell-task input:hover {
-	background: rgb(60, 60, 60);
+	background: rgb(39, 45, 56);
 }
 
 .dark .status-item:hover {
-	background: rgb(60, 60, 60);
+	background: rgb(39, 45, 56);
 }
 .dark .status-menu,
 .dark .status-menu-item {
-	background: rgb(25, 25, 25);
+	background: rgb(45, 55, 72);
+}
+.dark .status-menu {
+	border: 1px solid rgb(78, 87, 102);
 }
 .dark .status-menu-item:hover {
-	background: rgb(60, 60, 60);
+	background: rgb(57, 67, 83);
 }
 
+.dark .react-datepicker {
+	border: 1px solid rgb(78, 87, 102);
+	border-radius: 0.3rem;
+	background-color: rgb(78, 87, 102);
+}
 .dark .react-datepicker__header {
-	background-color: rgb(60, 60, 60);
+	background-color: rgb(78, 87, 102);
+	border-bottom: 0px solid rgb(180, 180, 180);
 }
 .dark .react-datepicker__header > *,
 .dark .react-datepicker__day-names > * {
-	color: rgb(180, 180, 180);
+	color: rgb(237, 237, 238);
 }
 .dark .react-datepicker button {
 	color: rgb(180, 180, 180);
-	line-height: 1;
 }
 .dark .react-datepicker__month {
-	background-color: rgb(25, 25, 25);
+	background: rgb(45, 55, 72);
 }
 .dark .react-datepicker__day {
 	color: rgb(180, 180, 180);
 }
 .dark .react-datepicker__day:hover {
-	background: rgb(60, 60, 60);
+	background: rgb(78, 87, 102);
 }
 .dark .react-datepicker__day--today {
 	color: rgb(220, 220, 220);
@@ -137,18 +155,26 @@ html[style^='color-scheme: dark'] {
 .dark .react-datepicker__quarter-text--today,
 .dark .react-datepicker__year-text--today {
 	color: rgb(220, 220, 220);
-	background: rgb(60, 60, 60);
+	background: rgb(78, 87, 102);
 }
 .dark .react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle::after {
-	border-bottom-color: rgb(60, 60, 60);
+	border-bottom-color: rgb(78, 87, 102);
+}
+.dark .react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle::before {
+	border-bottom-color: rgb(78, 87, 102);
 }
 .dark .react-datepicker-popper[data-placement^='top'] .react-datepicker__triangle::after {
-	border-top-color: rgb(25, 25, 25);
+	border-top-color: rgb(45, 55, 72);
+}
+.dark .react-datepicker-popper[data-placement^='top'] .react-datepicker__triangle::before {
+	border-top-color: rgb(78, 87, 102);
 }
 
 .dark .pagination-buttons button {
 	color: rgb(180, 180, 180);
+	border-color: rgb(63, 68, 78);
+	line-height: 1;
 }
 .dark .pagination-buttons button:hover {
-	background: rgb(60, 60, 60);
+	background: rgb(39, 45, 56);
 }
