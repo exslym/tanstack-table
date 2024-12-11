@@ -74,8 +74,8 @@ const FilterPopover = ({ columnFilters, setColumnFilters }) => {
 				</Button>
 			</PopoverTrigger>
 
-			<PopoverContent>
-				<PopoverArrow />
+			<PopoverContent className='popover-content'>
+				<PopoverArrow className='popover-arrow' />
 				<PopoverCloseButton />
 				<PopoverBody className='popover-body'>
 					<Text fontSize='md' fontWeight='bold' mb={4}>

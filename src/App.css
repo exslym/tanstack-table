@@ -96,9 +96,22 @@ html[style^='color-scheme: dark'] .theme-switcher {
 	border: 2px solid rgb(63, 68, 78);
 }
 .dark .popover-body {
-	background: rgb(25, 25, 25);
-	color: rgb(180, 180, 180);
+	background: rgb(45, 55, 72);
+	color: rgb(237, 237, 238);
 	border-radius: 5px;
+}
+.dark .popover-content {
+	background: rgb(45, 55, 72);
+	border-color: rgb(78, 87, 102);
+	border-radius: 5px;
+}
+.dark .popover-content .popover-arrow {
+	background: rgb(45, 55, 72) !important;
+	border-color: rgb(78, 87, 102) !important;
+	box-shadow: -1px -1px 0 0px rgb(78, 87, 102) !important;
+}
+.dark .popover-body .status-item:hover {
+	background: rgb(57, 67, 83);
 }
 
 .dark .table {
