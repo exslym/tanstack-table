@@ -54,11 +54,14 @@ body {
 
 /* DARK MODE */
 
-html[data-theme^='dark'] {
+html[data-theme^='dark'],
+html[style^='color-scheme: dark'] {
 	background-color: rgb(26, 32, 44);
 	color: rgb(237, 237, 238);
 }
-html[data-theme^='dark'] .theme-switcher {
+
+html[data-theme^='dark'] .theme-switcher,
+html[style^='color-scheme: dark'] .theme-switcher {
 	border: 1px solid rgb(237, 237, 238);
 }
 .dark body {
