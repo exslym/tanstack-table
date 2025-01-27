@@ -1,6 +1,6 @@
 ## [TanStack Table](https://exslym.github.io/tanstack-table/)
 
-[![preview](https://raw.githubusercontent.com/exslym/tanstack-table/refs/heads/main/public/preview.png)](https://exslym.github.io/tanstack-table/)
+[![preview](https://raw.githubusercontent.com/exslym/tanstack-table/refs/heads/main/public/preview1.png)](https://exslym.github.io/tanstack-table/)
 
   <div>
     <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logoColor=white&logo=react&color=3178C6" alt="React" />
@@ -11,7 +11,9 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-A complex table built using the React TanStack table library. The table includes many cool features like: custom filtering, sorting, pagination, column resizing, etc. Chakra UI is used to style the components.
+A complex table built using the React TanStack table library. The table includes many cool features like: custom filtering, sorting, pagination, column resizing, etc. 
+Chakra UI is used to style the components. 
+Implemented the feature of toggling light/dark theme using next-themes.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -28,5 +30,7 @@ A complex table built using the React TanStack table library. The table includes
 👉 **Sorting**
 
 👉 **Pagination**
+
+👉 **Light/Dark Theme Switching**
 
 #
